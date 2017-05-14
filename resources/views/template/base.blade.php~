@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css')  }}">
+    <link rel="stylesheet" href="{{ asset('css/styles.css')  }}">
+    <title>Tu Nombre</title>
+</head>
+<body>
+    @if(Auth::check())
+        @include('template.barLoginUser')
+    @else
+        @include('template.barMenu')
+    @endif
+    <header class="header">
+        <div class="container">
+            <h1 class="text-center">Tu Nombre</h1>
+            <p class="text-center">SÍ BUSCAS SOLUCIÓN A TUS PROBLEMAS, AQUI LA ENCONTRARAS</p>
+            <div class="text-center">
+                <a href="{{ route('index.login') }}" class="btn-primary-page">Consultate</a>
+            </div>
+        </div>
+    </header>
+    <section class="zone1">
+        <div class="container">
+            <h2 class="text-center">PROPÓSITO DEL ESPIRITISMO MARIALIONCERO</h2>
+            <hr>
+            <p class="text-center">
+                El principal propósito es el de ayudar a las personas en todos aquellos problemas que se pueda encontrar la solución por medio de la religión
+            </p>
+
+            <h2 class="text-center">POSIBLES PROBLEMAS</h2>
+            <hr>
+            <p class="text-center">
+                Toda persona siempre encuentra problemas tanto en su vida intima, con su pareja o con otros integrantes del hogar, problemas en tu empleo, no te salen los negocios, problemas de salud, sientes una presencia constante en tu casa de un ente inmaterial (espíritu), que no te permite dormir a ti o a un miembro de tu familia. Son posibles problemas que cualquier persona puede estar pasando y para los cuales te ofrecemos una solución.
+            </p>
+        </div>
+    </section>
+    <section class="zone2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="{{ asset('images/pic01.jpg') }}" class="img-responsive" alt="">
+                </div>
+                <div class="col-md-7">
+                    <h3 class="text-center">MARIA LIONZA</h3>
+                    <p class="text-justify">
+                        Es la que comanda, y tiene todo el conocimiento y es la que lleva las reglas de la religión y las hace cumplir impartiendo todo el conocimiento a las cortes y de ahí a los espiritistas, es representada por el color azul.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <h3 class="text-center">GUAICAIPURO</h3>
+                    <p class="text-justify">
+                        En la religuion es quien lleva la fuerza del espiritismo maria lioncero, además comanda la corte indígena y es representado por el color amarillo.
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img src="{{ asset('images/pic01.jpg') }}" class="img-responsive" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="{{ asset('images/pic01.jpg') }}" class="img-responsive" alt="">
+                </div>
+                <div class="col-md-7">
+                    <h3 class="text-center">NEGRO FELIPE</h3>
+                    <p class="text-justify">
+                        En la religión es quien lleva la evolución del espiritismo marialioncero, y comanda las cortes bolivarianas y negra bolivariana, y es representado con el color rojo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="zone3">
+        <div class="container">
+            <h2 class="text-center">¿QUE SERVICIOS OFRECEMOS?</h2>
+            <div class="row">
+                <div class="col-md-5 col-md-offset-1 services">
+                    <h3>DOMINIO</h3>
+                    <p>
+                        Para cualquier problema en tu vida amorosa.
+                    </p>
+                </div>
+                <div class="col-md-5 services">
+                    <h3>NEGOCIOS</h3>
+                    <p>
+                        Para dar un impulso a tus finanzas.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 col-md-offset-1 services">
+                    <h3>PROTECCIÓN</h3>
+                    <p>
+                        Para brindar resguardo a quien lo necesite.
+                    </p>
+                </div>
+                <div class="col-md-5 services">
+                    <h3>SALUD</h3>
+                    <p>
+                        Para dar bienestar espiritual y corporal.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    @include('template.footer')
+
+    <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js')  }}"></script>
+</body>
+</html>

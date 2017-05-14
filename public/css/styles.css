@@ -1,0 +1,226 @@
+html{
+    height: 100%;
+}
+body{
+    background: url("../images/banner.jpg") fixed;
+    background-size: cover;
+    height: 100%;
+}
+.btn-primary-page{
+    background-color: #ef5e4a;
+    font-size: 2.5rem;
+    padding: 1rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    border-radius: .3rem;
+    color: #fff;
+    border-color: #ef5e4a;
+}
+.btn-primary-page:hover {
+    background-color: #ef7356;
+    color: #fff;
+    text-decoration: none;
+}
+.btn-primary-page:focus {
+    background-color: #ef795b;
+    color: #fff;
+    text-decoration: none;
+}
+.btn-secondary-page{
+    background-color: #f4f4f4;
+    font-size: 2.5rem;
+    padding: 1rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    border-radius: .3rem;
+    color: #ef7356;
+    border-color: #ef5e4a;
+}
+.btn-primary-page-small{
+    background-color: #ef5e4a;
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    border-radius: .3rem;
+    color: #fff;
+    border-color: #ef5e4a;
+}
+.btn-primary-page-small:hover {
+    background-color: #ef7356;
+    color: #fff;
+    text-decoration: none;
+}
+.btn-primary-page-small:focus {
+    background-color: #ef795b;
+    color: #fff;
+    text-decoration: none;
+}
+.btn-secondary-page-small{
+    background-color: #f4f4f4;
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    border-radius: .3rem;
+    color: #222;
+    border-color: #ef5e4a;
+}
+.pagination>.active>a, 
+.pagination>.active>a:focus, 
+.pagination>.active>a:hover, 
+.pagination>.active>span, 
+.pagination>.active>span:focus, 
+.pagination>.active>span:hover{
+    background-color: #ef5e4a;
+    border-color: #ef5e4a;
+}
+.pagination>li>a, 
+.pagination>li>span{
+    color: #ef5e4a;
+}
+#loading{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    margin-top: 9rem;
+    background-color: #fff;
+    display: none;
+}
+.icon-service {
+    display: none;
+}
+.alert {
+    margin-top: 1rem;
+}
+/*  ---------------------------*/
+.header{
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    min-height: 100%;
+}
+    .header h1{
+        color: #fff;
+        border-top: solid;
+        border-bottom: solid;
+        font-size: 5rem;
+        padding: 1.5rem;
+    }
+    .header p{
+        color: #fff;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+.zone1{
+    background-color: #21b2a6;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #fff;
+}
+    .zone1 p{
+        font-size: 1.7rem;
+    }
+
+.zone2{
+    background-color: #2e3842;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    color: #fff;
+}
+    .zone2 .row{
+        margin-top: 2rem;
+    }
+    .zone2 p{
+        font-size: 2rem;
+    }
+
+.zone3{
+    background-color: #505393;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    color: #fff;
+}
+    .zone3 .services{
+        font-size: 1.5rem;
+        padding: 2rem;
+        box-shadow: 0 0 0.1rem rgba(0,0,0,0.7);
+    }
+
+footer{
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: 2rem;
+}
+body  nav{
+    background-color: #ef5e4a;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+    nav h2 {
+        font-size: 2rem;
+        margin: 0rem;
+        padding: 1rem 0rem 1rem 0rem;
+        font-weight: bold;
+        display: inline-block;
+    }
+    nav a{
+        padding: 1rem;
+        color: #fff;
+        cursor: pointer;
+    }
+    nav a:hover{
+        text-decoration: none;
+        background-color: #fff;
+        color: #222;
+    }
+    nav a:focus{
+        text-decoration: none;
+        background-color: #fff;
+        color: #222;
+    }
+
+
+#header-generic{
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+}
+    #header-generic .container{
+        padding-top: 7rem;
+        padding-bottom: 5rem;
+    }
+    #header-generic h1{
+        border-top: solid;
+        border-bottom: solid;
+        padding: 1rem;
+    }
+
+.main{
+    background-color: rgba(0,0,0,0.7);
+}
+    .main .container{
+        background-color: #fff;
+        -webkit-border-radius: 0.4rem;
+        -moz-border-radius: 0.4rem;
+        border-radius: 0.4rem;
+        padding-bottom: .5rem;
+    }
+.extra .block-extra{
+    padding: .5rem;
+    font-size: 1.3rem;
+}
+    .extra .block-extra div{
+        border: solid #ddd 0.1rem;
+        padding: .3rem;
+    }
