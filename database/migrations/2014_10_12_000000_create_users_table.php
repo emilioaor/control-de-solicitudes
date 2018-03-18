@@ -24,7 +24,7 @@ class CreateUsersTable extends Migration
             $table->string('country');
             $table->string('state');
             $table->string('level');
-            $table->string('password_temp')->unique()->nullable();
+            $table->string('password_temp')->nullable();
             $table->rememberToken();
             $table->timestamps();
             $table->index(['user','email','password','password_temp']);
